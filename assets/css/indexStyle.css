@@ -1,0 +1,26 @@
+header{
+    padding: 0 40px;
+    background-color: #FFFFFF;
+}
+
+#profileButtons{
+    border: 2px solid #EEEEEE;
+    border-radius: 25px;
+}
+
+header .nav-link{
+    border-radius: 25px;
+}
+
+header .nav-link:hover{
+    background-color: #EEEEEE;
+}
+
+#profileButtons:hover{
+    box-shadow: 0px 2px 6px 0px #DDDDDD;
+}
+
+nav .dropdown-menu{
+    box-shadow: 0px 2px 6px 0px #DDDDDD;
+    border: 0;
+}
