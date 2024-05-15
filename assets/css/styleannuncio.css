@@ -52,7 +52,7 @@
     padding: 5px;
 }
 
-.host {
+.host,#reviews {
     border-top: solid 1px rgb(234, 231, 231);
     border-bottom: solid 1px rgb(234, 231, 231);
 
@@ -62,7 +62,9 @@
     height: 50px;
     width: 50px;
 }
-
+#showMore{
+    height: 500px;
+}
 
 .description{
     border-top: solid 1px rgb(234, 231, 231);
@@ -86,4 +88,22 @@
 #gem{
     color: pink;
     font-size: xx-large;
+}
+
+#reviews img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.description button{
+    background-color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+}
+
+#showAmenities .modal-body ul{
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgb(234, 231, 231);
 }
