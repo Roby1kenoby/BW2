@@ -63,6 +63,13 @@
     width: 50px;
 }
 
+
+.description{
+    border-top: solid 1px rgb(234, 231, 231);
+    border-bottom: solid 1px rgb(234, 231, 231);
+    font-size: medium;
+}
+
 .infoHost i {
     height: 40px;
     width: 40px;
@@ -74,4 +81,9 @@
 
 .total {
     border-top: solid 1px rgb(234, 231, 231);
+}
+
+#gem{
+    color: pink;
+    font-size: xx-large;
 }
