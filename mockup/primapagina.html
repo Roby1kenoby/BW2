@@ -205,12 +205,6 @@
                 <div class="col-6 col-md-4 col-lg-2 ">
 
                     <a href="#">Mostra altro</a>
-
-
-
-
-
-
                 </div>
             </div>
 
@@ -243,19 +237,6 @@
         }
 
 
-        document.addEventListener('DOMContentLoaded', function () {
-            var showMoreButton = document.getElementById('show-more-btn');
-            var showMoreContent = document.querySelector('.show-more-content');
-
-            showMoreButton.addEventListener('click', function () {
-                showMoreContent.classList.toggle('active');
-                if (showMoreContent.classList.contains('active')) {
-                    showMoreButton.textContent = 'Mostra Meno';
-                } else {
-                    showMoreButton.textContent = 'Mostra Altro';
-                }
-            });
-        });
 
 
 
