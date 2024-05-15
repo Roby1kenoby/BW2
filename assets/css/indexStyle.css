@@ -1,5 +1,4 @@
 header{
-    padding: 0 40px;
     background-color: #FFFFFF;
 }
 
@@ -23,4 +22,61 @@ header .nav-link:hover{
 nav .dropdown-menu{
     box-shadow: 0px 2px 6px 0px #DDDDDD;
     border: 0;
+}
+
+/* #searchNav{
+    padding: 0 28%
+} */
+
+
+/* #searchNav{
+    border: 1px solid black;
+}
+
+#searchNavWrapper{
+    border-radius: 45px;
+    border: 1px solid black;
+}
+
+#searchNavWrapper div{
+    border: 1px solid black;
+}
+
+.searchField:hover{
+    background-color: #EEEEEE;
+}    
+.vr{
+    align-self: center;
+    height: 40px;
+    width: 0.1px;
+} */
+
+nav:nth-child(2) div{
+    border: 1px solid black
+}
+
+#searchNavWrapper{
+    border-radius: 45px;
+    border: 1px solid black;
+    padding: 0 15%;
+    
+}
+
+.searchField {
+    border-radius: 45px;
+    padding: 0;
+    text-wrap: nowrap;
+}
+
+.searchField:hover{
+    background-color: #EEEEEE;
+}
+
+#dove input{
+    background: transparent;
+}
+
+#dove input:focus{
+    border: none;
+    outline: none;
 }

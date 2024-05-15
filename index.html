@@ -11,21 +11,23 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm">
+    <header class="container ">
+        <nav id="socialNav" class="navbar navbar-expand-sm">
             <div class="container-fluid">
-                <div class="d-flex justify-content-between">
-                    <a href="#" class="navbar-brand">
-                        <img src="assets/logo-pink.png" alt="AirBnBLogo" class="img-fluid w-50">
-                    </a>
-                    <div class="col-6 d-flex align-items-center px-5">
+                <div class="d-flex justify-content-between flex-wrap ">
+                    <div class="col-md-6 col-lg-3 order-md-1 order-lg-1">
+                        <a href="#" class="navbar-brand">
+                            <img src="assets/logo-pink.png" alt="AirBnBLogo" class="img-fluid w-25">
+                        </a>
+                    </div>
+                    <div class="col-md-12 col-lg-6 d-flex align-items-center px-5 order-md-3 order-lg-2">
                         <div class="navbar-nav d-flex justify-content-center w-100">
                             <a href="#" class="nav-link px-3 active">Soggiorni</a>
                             <a href="#" class="nav-link px-3">Esperienze</a>
                             <a href="#" class="nav-link px-3 text-nowrap ">Esperienze Online</a>
                         </div>
                     </div>
-                    <div class="col-3 d-flex align-items-center">
+                    <div class="col-md-6 col-lg-3 d-flex align-items-center order-md-2 order-lg-3">
                         <div class="container d-flex align-items-center justify-content-end">
                             <div class="d-flex justify-content-end me-3">
                                 <a href="#" class="nav-link p-2 text-nowrap ">Affitta con Airbnb</a>
@@ -62,6 +64,69 @@
                 </div>
             </div>
         </nav>
+
+        <nav class="container">
+            <div id="searchNavWrapper" class="row d-flex align-items-center ">
+                <div id="dove" class="searchField col-4">
+                    <div class="px-3">
+                        <p role="button" class="m-0 ">Dove</p>
+                        <input role="button" type="text" placeholder="Cerca destinazioni" class="border-0">
+                    </div>
+                </div>
+                <div class="searchField col-2">
+                    <div class="px-3">
+                        <p role="button" class="m-0 ">Check-in</p>
+                        <p role="button" class="m-0 ">Aggiungi Date</p>
+                    </div>
+                </div>
+                <div class="searchField col-2">
+                    <div class="px-3">
+                        <p role="button" class="m-0 ">Check-out</p>
+                        <p role="button" class="m-0 ">Aggiungi Date</p>
+                    </div>
+                </div>
+                <div class="searchField col-4">
+                    <div class="d-flex justify-content-between align-content-center ">
+                        <div class="px-3">
+                            <p role="button" class="m-0 ">Chi</p>
+                            <p role="button" class="m-0 ">Aggiungi Ospiti</p>
+                        </div>
+                        <div class="align-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <nav id="searchNav" class="navbar navbar-expand-sm justify-content-center ">
+            <div class="col-8 d-flex">
+                <div id="searchNavWrapper" class="container d-flex justify-content-between ">
+                    <div id="dove" class="searchField d-flex flex-column ">
+                        <label role="button" for="dove">Dove</label>
+                        <input role="button" type="text" placeholder="Cerca destinazioni">
+                    </div>
+                    <div class="vr"></div>
+                    <div id="checks" class="searchField d-flex ">
+                        <div role="button" id="checkin">
+                            <label for="check-in">Check-in</label>
+                            <p>Aggiungi Date</p>
+                        </div>
+                        <div class="vr"></div>
+                        <div role="button" id="checkout">
+                            <label for="check-out">Check-out</label>
+                            <p>Aggiungi Date</p>
+                        </div>
+                    </div>
+                    <div class="vr"></div>
+                    <div id="chi" class="searchField">
+                        <Label for="chi">Chi</Label>
+                    </div>
+                </div>
+            </div>
+        </nav> -->
     </header>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
