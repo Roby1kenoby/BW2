@@ -6,8 +6,6 @@
     width: 50%;
 }
 
-
-
 #fotoSingola{
     height: auto;
     width: 100%;
@@ -35,7 +33,7 @@
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    height: 450px;
+    height: 455px;
     gap: 10px;
 }
 
@@ -45,6 +43,14 @@
     object-fit: cover;
 }
 
+#sezioneFoto img {
+    border-radius: 20px;
+}
+
+#firstCard {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 #check-in,
 #check-out {
     border-radius: 10px;
@@ -52,9 +58,14 @@
     padding: 5px;
 }
 
-.host,#reviews {
+.host {
     border-top: solid 1px rgb(234, 231, 231);
     border-bottom: solid 1px rgb(234, 231, 231);
+
+}
+#reviews {
+    border-top: solid 1px rgb(234, 231, 231);
+   /* border-bottom: solid 1px rgb(234, 231, 231);*/
 
 }
 
@@ -62,11 +73,12 @@
     height: 50px;
     width: 50px;
 }
-#showMore{
+
+#showMore {
     height: 500px;
 }
 
-.description{
+.description {
     border-top: solid 1px rgb(234, 231, 231);
     border-bottom: solid 1px rgb(234, 231, 231);
     font-size: medium;
@@ -85,25 +97,29 @@
     border-top: solid 1px rgb(234, 231, 231);
 }
 
-#gem{
+#gem {
     color: pink;
     font-size: xx-large;
 }
 
-#reviews img{
+#reviews img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
 
-.description button{
+.description button {
     background-color: white;
     font-weight: bold;
     border-radius: 20px;
     border: none;
 }
 
-#showAmenities .modal-body ul{
+#showAmenities .modal-body ul {
     padding-bottom: 10px;
+    border-bottom: solid 1px rgb(234, 231, 231);
+}
+
+main{
     border-bottom: solid 1px rgb(234, 231, 231);
 }
