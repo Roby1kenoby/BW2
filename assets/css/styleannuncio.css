@@ -48,7 +48,8 @@
 }
 
 #firstCard {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    border-radius: 10px;
 }
 
 #check-in,
@@ -123,3 +124,4 @@
 main{
     border-bottom: solid 1px rgb(234, 231, 231);
 }
+
