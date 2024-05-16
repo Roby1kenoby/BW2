@@ -31,11 +31,33 @@ span {
     border-radius: 50%;
 }
 
-#carouselCard1 button {
+#carouselCard1 button,
+#carouselCard2 button,
+#carouselCard3 button,
+#carouselCard4 button,
+#carouselCard5 button,
+#carouselCard6 button,
+#carouselCard7 button,
+#carouselCard8 button,
+#carouselCard9 button,
+#carouselCard10 button,
+#carouselCard11 button,
+#carouselCard12 button {
     visibility: hidden;
 }
 
-#carouselCard1:hover button {
+#carouselCard1:hover button,
+#carouselCard2:hover button,
+#carouselCard3:hover button,
+#carouselCard4:hover button,
+#carouselCard5:hover button,
+#carouselCard6:hover button,
+#carouselCard7:hover button,
+#carouselCard8:hover button,
+#carouselCard9:hover button,
+#carouselCard10:hover button,
+#carouselCard11:hover button,
+#carouselCard12:hover button {
     visibility: visible;
     transition-duration: 0.5s;
 }
