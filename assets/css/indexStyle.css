@@ -90,3 +90,7 @@ nav:nth-child(2) div{
     margin: 0 1em
 }
 
+#regionDropdown.dropdown-menu{
+    width: 500px;
+
+}
