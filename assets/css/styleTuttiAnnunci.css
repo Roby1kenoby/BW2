@@ -1,0 +1,107 @@
+#scrollable {
+    padding-inline: 80px;
+}
+
+#scrollable img {
+    width: 24px;
+    height: 24px;
+}
+
+.scrollable-img {
+    margin: 12px 0px 10px;
+    padding: 4px 0px;
+}
+
+#cardSection {
+    min-height: 100vh;
+}
+
+span {
+    font-size: 12px;
+    min-width: max-content;
+}
+
+.card-image {
+    aspect-ratio: 20/19;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+#carouselCard1 button {
+    visibility: hidden;
+}
+
+#carouselCard1:hover button {
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+
+.buttonGroup {
+    position: relative;
+    top: 35px;
+    z-index: 10;
+    margin-inline: 15px;
+}
+
+.sharePrefer {
+    gap: 10px;
+}
+
+.share {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardText > p {
+    color: #6A6A6A;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: 50%;
+    bottom: 50%;
+}
+
+.next-icon, .prev-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.share:hover {
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: darkgray;
+}
+
+.share {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.heart {
+    transition: transform 0.5s;
+}
+
+p {
+    margin-bottom: 0;
+}
