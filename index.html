@@ -66,32 +66,66 @@
         </nav>
 
         <nav class="container">
-            <div id="searchNavWrapper" class="row d-flex align-items-center ">
+            <div id="searchNavWrapper" class="row d-flex">
                 <div id="dove" class="searchField col-4">
-                    <div class="px-3">
-                        <p role="button" class="m-0 ">Dove</p>
-                        <input role="button" type="text" placeholder="Cerca destinazioni" class="border-0">
+                    <div class="px-3 dropdown ">
+                        <a role="button" class="" data-bs-toggle="dropdown">
+                            <p role="button" class="m-0 ">Dove</p>
+                            <input role="button" type="text" placeholder="Cerca destinazioni" class="border-0">
+                        </a>
+                        <ul id="regionDropdown" class="dropdown-menu">
+                            <h6>Cerca per regione</h6>
+                            <div class="row row-cols-3">
+                                <div class="col px-1">
+                                    <div class="card">
+                                        <img class="img-fluid" src="assets/america.webp" alt="">
+                                    </div>
+                                    <p class="card-text ">Sono flessibile</p>
+                                    
+                                </div>
+                                <div class="col px-1">
+                                    <img class="img-fluid" src="assets/america.webp" alt="">
+                                    <p>Sono flessibile</p>
+                                </div>
+                                <div class="col px-1">
+                                    <img class="img-fluid" src="assets/america.webp" alt="">
+                                    <p>Sono flessibile</p>
+                                </div>
+                                <div class="col px-1">
+                                    <img class="img-fluid" src="assets/america.webp" alt="">
+                                    <p>Sono flessibile</p>
+                                </div>
+                                <div class="col px-1">
+                                    <img class="img-fluid" src="assets/america.webp" alt="">
+                                    <p>Sono flessibile</p>
+                                </div>
+                                <div class="col px-1">
+                                    <img class="img-fluid" src="assets/america.webp" alt="">
+                                    <p>Sono flessibile</p>
+                                </div>
+                            </div>
+                        </ul>
                     </div>
                 </div>
                 <div class="searchField col-2">
-                    <div class="px-3">
+                    <div class="">
                         <p role="button" class="m-0 ">Check-in</p>
-                        <p role="button" class="m-0 ">Aggiungi Date</p>
+                        <p role="button" class="m-0 text-truncate">Aggiungi Date</p>
                     </div>
                 </div>
                 <div class="searchField col-2">
-                    <div class="px-3">
+                    <div class="">
                         <p role="button" class="m-0 ">Check-out</p>
-                        <p role="button" class="m-0 ">Aggiungi Date</p>
+                        <p role="button" class="m-0 text-truncate">Aggiungi Date</p>
                     </div>
                 </div>
                 <div class="searchField col-4">
                     <div class="d-flex justify-content-between align-content-center ">
-                        <div class="px-3">
+                        <div class="">
                             <p role="button" class="m-0 ">Chi</p>
                             <p role="button" class="m-0 ">Aggiungi Ospiti</p>
                         </div>
-                        <div class="align-content-center">
+                        <div id="lens" class="align-content-center">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
                                 <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
                             </svg>

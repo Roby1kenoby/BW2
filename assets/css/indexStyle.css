@@ -52,24 +52,29 @@ nav .dropdown-menu{
 } */
 
 nav:nth-child(2) div{
-    border: 1px solid black
+    /* border: 1px solid black */
 }
 
 #searchNavWrapper{
     border-radius: 45px;
     border: 1px solid black;
-    padding: 0 15%;
-    
+    /* padding: 0 15%; */
+    /* IMPORTANTE: questo allarga il container in base al contenuto*/
+    max-width: fit-content;
+    margin-inline: auto;
+    background-color: #EEEEEE;
+    flex-wrap: nowrap;
 }
 
 .searchField {
     border-radius: 45px;
     padding: 0;
-    text-wrap: nowrap;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .searchField:hover{
-    background-color: #EEEEEE;
+    background-color: white;
 }
 
 #dove input{
@@ -80,3 +85,8 @@ nav:nth-child(2) div{
     border: none;
     outline: none;
 }
+
+#lens img{
+    margin: 0 1em
+}
+
