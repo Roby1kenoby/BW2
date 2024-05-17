@@ -52,6 +52,33 @@
     border-radius: 10px;
 }
 
+.card-custom {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.btn-custom {
+    background-color: #ff385c;
+    color: white;
+    font-size: 0.9rem;
+}
+.btn-custom:hover {
+    background-color: #e03149;
+}
+.guest-count {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+.link-underline-dark {
+    text-decoration: underline;
+    color: black;
+}
+.link-underline-dark:hover {
+    text-decoration: none;
+}
+
 #check-in,
 #check-out {
     border-radius: 10px;
