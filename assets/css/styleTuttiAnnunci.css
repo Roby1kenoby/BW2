@@ -1,5 +1,9 @@
 #scrollable {
-    padding-inline: 80px;
+    padding-inline: 50px;
+}
+
+main {
+    border-bottom: 1px solid gray;
 }
 
 #scrollable img {
@@ -14,6 +18,7 @@
 
 #cardSection {
     min-height: 100vh;
+    margin-bottom: 80px;
 }
 
 span {
@@ -99,9 +104,13 @@ span {
     align-items: center;
     background-color: white;
     color: black;
-    width: 18px;
-    height: 18px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
+}
+
+.next-icon svg, .prev-icon svg {
+    padding: 3px 3px;
 }
 
 .share:hover {
@@ -126,4 +135,64 @@ span {
 
 p {
     margin-bottom: 0;
+}
+
+#tableSection section {
+    padding: 48px 60px;
+    background-color: #F7F7F7;
+}
+
+.black {
+    color: black;
+}
+
+#tableSection * a {
+
+    color: black;
+    text-decoration: none;
+}
+
+#tableSection * p {
+    color: gray;
+}
+
+#tableSection ul {
+    border-bottom: 1px solid gray;
+}
+
+#tableSection li {
+    cursor: pointer;
+    padding: 10px;
+    list-style: none;
+    color: gray;
+}
+
+#tableSection li.selected {
+    border-bottom-color: black;
+    color: black;
+    position: relative;
+
+}
+
+#tableSection li.selected:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid black;
+
+}
+
+.swiper {
+    margin-left: 0;
+
+}
+
+.swiper-slide {
+    width: auto !important;
+}
+
+.footer {
+    background-color: #F7F7F7;
 }
