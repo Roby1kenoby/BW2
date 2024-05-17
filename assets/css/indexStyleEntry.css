@@ -1,0 +1,119 @@
+header{
+    background-color: #FFFFFF;
+}
+
+#socialNav .nav-link{
+    color: white !important;
+}
+
+#socialNav .nav-link:hover{
+    color: black !important;
+}
+
+#profileButtons{
+    border: 2px solid #EEEEEE;
+    background-color: white;
+    border-radius: 25px;
+}
+
+header .nav-link{
+    border-radius: 25px;
+}
+
+header .nav-link:hover{
+    background-color: #EEEEEE;
+}
+
+#profileButtons:hover{
+    box-shadow: 0px 2px 6px 0px #DDDDDD;
+}
+
+nav .dropdown-menu{
+    box-shadow: 0px 2px 6px 0px #DDDDDD;
+    border: 0;
+}
+
+
+@media screen and (max-width: 425) {
+    #searchNavWrapper{
+        width: 380px;
+        height: auto;
+    }
+    #datePicker.dropdown-menu{
+        width: 380px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #searchNavWrapper{
+        width: 688px;
+        height: auto;
+    }
+    #datePicker.dropdown-menu{
+        width: 688px;
+    }
+}
+
+@media screen and (min-width:769px){
+    #searchNavWrapper{
+        width: 850px;
+        height: auto;
+    } 
+    #datePicker.dropdown-menu{
+        width: 850px;
+    }
+}
+#searchNavWrapper{
+    border-radius: 45px;
+    /* box-shadow: 0px 2px 6px 0px #DDDDDD; */
+    border: 0;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.searchField {
+    border-radius: 45px;
+    padding: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.searchField:hover{
+    background-color: #EEEEEE;
+}
+
+.searchFieldBig{
+    padding: 12px 32px;
+}
+
+.searchFieldSmall{
+    padding: 12px 16px;
+}
+
+#dove input{
+    background: transparent;
+    padding: 0;
+}
+
+#dove input:focus{
+    border: none !important;
+    outline: none !;
+}
+
+.searchField a{
+    text-decoration: none;
+    color: grey;
+}
+
+#regionDropdown.dropdown-menu{
+    width: 500px;
+    border-radius: 2em;
+}
+
+#regionDropdown h6{
+    padding: 1em 2em;
+}
+
+#regionContainer{
+    padding: 0em 2em 1em;
+}
