@@ -136,7 +136,7 @@ span {
 p {
     margin-bottom: 0;
 }
-
+/*Ispirazione per viaggi futuri*/
 #tableSection section {
     padding: 48px 60px;
     background-color: #F7F7F7;
@@ -193,6 +193,25 @@ p {
     width: auto !important;
 }
 
+#tableSection .nav-link {
+    color: gray;
+}
+
+#tableSection .nav-tabs {
+    --bs-nav-tabs-border-width: 0;
+    --bs-nav-tabs-border-color: none;
+    --bs-nav-tabs-border-radius: 0;
+    --bs-nav-tabs-link-hover-border-color: none;
+    --bs-nav-tabs-link-active-color: none;
+    --bs-nav-tabs-link-active-bg: none;
+    --bs-nav-tabs-link-active-border-color: none;
+    border-bottom: 1px solid gray;
+}
+
+#tableSection .nav {
+    --bs-nav-link-hover-color: none;
+}
+/*footer*/
 .footer {
     background-color: #F7F7F7;
 }
