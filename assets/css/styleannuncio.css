@@ -152,3 +152,12 @@ main{
     border-bottom: solid 1px rgb(234, 231, 231);
 }
 
+.lastDiv{
+    border-top: solid 1px rgb(234, 231, 231);
+}
+
+footer li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
