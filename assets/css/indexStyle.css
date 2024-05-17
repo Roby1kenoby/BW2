@@ -24,46 +24,42 @@ nav .dropdown-menu{
     border: 0;
 }
 
-/* #searchNav{
-    padding: 0 28%
-} */
 
-
-/* #searchNav{
-    border: 1px solid black;
+@media screen and (max-width: 425) {
+    #searchNavWrapper{
+        width: 380px;
+        height: auto;
+    }
+    #datePicker.dropdown-menu{
+        width: 380px;
+    }
 }
 
+@media screen and (max-width:768px) {
+    #searchNavWrapper{
+        width: 688px;
+        height: auto;
+    }
+    #datePicker.dropdown-menu{
+        width: 688px;
+    }
+}
+
+@media screen and (min-width:769px){
+    #searchNavWrapper{
+        width: 850px;
+        height: auto;
+    } 
+    #datePicker.dropdown-menu{
+        width: 850px;
+    }
+}
 #searchNavWrapper{
     border-radius: 45px;
-    border: 1px solid black;
-}
-
-#searchNavWrapper div{
-    border: 1px solid black;
-}
-
-.searchField:hover{
-    background-color: #EEEEEE;
-}    
-.vr{
-    align-self: center;
-    height: 40px;
-    width: 0.1px;
-} */
-
-nav:nth-child(2) div{
-    /* border: 1px solid black */
-}
-
-#searchNavWrapper{
-    border-radius: 45px;
-    border: 1px solid black;
-    /* padding: 0 15%; */
-    /* IMPORTANTE: questo allarga il container in base al contenuto*/
-    max-width: fit-content;
-    margin-inline: auto;
-    background-color: #EEEEEE;
-    flex-wrap: nowrap;
+    box-shadow: 0px 2px 6px 0px #DDDDDD;
+    border: 0;
+    background-color: white;
+    margin: 0 auto;
 }
 
 .searchField {
@@ -74,23 +70,41 @@ nav:nth-child(2) div{
 }
 
 .searchField:hover{
-    background-color: white;
+    background-color: #EEEEEE;
+}
+
+.searchFieldBig{
+    padding: 12px 32px;
+}
+
+.searchFieldSmall{
+    padding: 12px 16px;
 }
 
 #dove input{
     background: transparent;
+    padding: 0;
 }
 
 #dove input:focus{
-    border: none;
-    outline: none;
+    border: none !important;
+    outline: none !;
 }
 
-#lens img{
-    margin: 0 1em
+.searchField a{
+    text-decoration: none;
+    color: grey;
 }
 
 #regionDropdown.dropdown-menu{
     width: 500px;
+    border-radius: 2em;
+}
 
+#regionDropdown h6{
+    padding: 1em 2em;
+}
+
+#regionContainer{
+    padding: 0em 2em 1em;
 }
