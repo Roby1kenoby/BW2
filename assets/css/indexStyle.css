@@ -1,0 +1,96 @@
+header{
+    background-color: #FFFFFF;
+}
+
+#profileButtons{
+    border: 2px solid #EEEEEE;
+    border-radius: 25px;
+}
+
+header .nav-link{
+    border-radius: 25px;
+}
+
+header .nav-link:hover{
+    background-color: #EEEEEE;
+}
+
+#profileButtons:hover{
+    box-shadow: 0px 2px 6px 0px #DDDDDD;
+}
+
+nav .dropdown-menu{
+    box-shadow: 0px 2px 6px 0px #DDDDDD;
+    border: 0;
+}
+
+/* #searchNav{
+    padding: 0 28%
+} */
+
+
+/* #searchNav{
+    border: 1px solid black;
+}
+
+#searchNavWrapper{
+    border-radius: 45px;
+    border: 1px solid black;
+}
+
+#searchNavWrapper div{
+    border: 1px solid black;
+}
+
+.searchField:hover{
+    background-color: #EEEEEE;
+}    
+.vr{
+    align-self: center;
+    height: 40px;
+    width: 0.1px;
+} */
+
+nav:nth-child(2) div{
+    /* border: 1px solid black */
+}
+
+#searchNavWrapper{
+    border-radius: 45px;
+    border: 1px solid black;
+    /* padding: 0 15%; */
+    /* IMPORTANTE: questo allarga il container in base al contenuto*/
+    max-width: fit-content;
+    margin-inline: auto;
+    background-color: #EEEEEE;
+    flex-wrap: nowrap;
+}
+
+.searchField {
+    border-radius: 45px;
+    padding: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.searchField:hover{
+    background-color: white;
+}
+
+#dove input{
+    background: transparent;
+}
+
+#dove input:focus{
+    border: none;
+    outline: none;
+}
+
+#lens img{
+    margin: 0 1em
+}
+
+#regionDropdown.dropdown-menu{
+    width: 500px;
+
+}
