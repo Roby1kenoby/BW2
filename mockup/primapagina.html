@@ -59,7 +59,26 @@
             width: auto !important;
         }
 
-        
+        .nav-link {
+            color: gray;
+        }
+
+        .nav-tabs {
+            --bs-nav-tabs-border-width: 0;
+            --bs-nav-tabs-border-color: none;
+            --bs-nav-tabs-border-radius: 0;
+            --bs-nav-tabs-link-hover-border-color: none;
+            --bs-nav-tabs-link-active-color: none;
+            --bs-nav-tabs-link-active-bg: none;
+            --bs-nav-tabs-link-active-border-color: none;
+            border-bottom: 1px solid gray;
+        }
+
+        .nav {
+
+            --bs-nav-link-hover-color: none;
+
+        }
     </style>
 </head>
 
@@ -72,32 +91,49 @@
 
                 <div class="col-md-12 ms-0 ps-2 ">
 
-                    <ul class="d-flex ps-0">
+                    <ul class="d-flex ps-0 nav nav-tabs" id="myTab" role="tablist">
                         <div class="swiper">
                             <div class="swiper-wrapper ">
-                                <div class="swiper-slide">
-                                    <li>Popolari</li>
+                                <div class="swiper-slide nav-item" role="presentation">
+                                    <li class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home-tab-pane" type="button" role="tab"
+                                        aria-controls="home-tab-pane" aria-selected="true">Popolari</li>
                                 </div>
-                                <div class="swiper-slide">
-                                    <li>Sul litorale</li>
+                                <div class="swiper-slide nav-item" role="presentation">
+                                    <li class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                        aria-controls="profile-tab-pane" aria-selected="false">
+                                        Sul litorale</li>
                                 </div>
-                                <div class="swiper-slide">
-                                    <li>Destinazioni storiche</li>
+                                <div class="swiper-slide nav-item" role="presentation">
+                                    <li class="nav-link" id="destination-tab" data-bs-toggle="tab"
+                                        data-bs-target="#destination-tab-pane" type="button" role="tab"
+                                        aria-controls="destination-tab-pane" aria-selected="false">Destinazioni storiche
+                                    </li>
                                 </div>
-                                <div class="swiper-slide">
-                                    <li>Isole</li>
+                                <div class="swiper-slide nav-item" role="presentation">
+                                    <li class="nav-link" id="island-tab" data-bs-toggle="tab"
+                                        data-bs-target="#island-tab-pane" type="button" role="tab"
+                                        aria-controls="island-tab-pane" aria-selected="false">
+                                        Isole</li>
                                 </div>
-                                <div class="swiper-slide">
-                                    <li>Montagne</li>
+                                <div class="swiper-slide nav-item" role="presentation">
+                                    <li class="nav-link" id="mountains-tab" data-bs-toggle="tab"
+                                        data-bs-target="#mountains-tab-pane" type="button" role="tab"
+                                        aria-controls="mountains-tab-pane" aria-selected="false">Montagne</li>
                                 </div>
-                                <div class="swiper-slide">
-                                    <li>Categorie</li>
+                                <div class="swiper-slide nav-item" role="presentation">
+                                    <li class="nav-link" id="categories-tab" data-bs-toggle="tab"
+                                        data-bs-target="#categories-tab-pane" type="button" role="tab"
+                                        aria-controls="categories-tab-pane" aria-selected="false">Categorie</li>
                                 </div>
-                                <div class="swiper-slide">
-                                    <li>Attività</li>
+                                <div class="swiper-slide nav-item" role="presentation">
+                                    <li class="nav-link" id="activities-tab" data-bs-toggle="tab"
+                                        data-bs-target="#activities-tab-pane" type="button" role="tab"
+                                        aria-controls="activities-tab-pane" aria-selected="false">Attività</li>
                                 </div>
                             </div>
-                           
+
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
                         </div>
@@ -107,110 +143,584 @@
 
             </div>
 
-            <div class="row mt-4">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="row mt-4 ">
 
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Acireale</a>
-                    <p>Soggiorni in appartamenti</p>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Acireale</a>
+                            <p>Soggiorni in appartamenti</p>
 
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Amsterdam</a>
+                            <p>Soggiorni in bungalow</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Arezzo</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Assisi</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Barcellona</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Bologna</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Catania</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Chia</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Firenze</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Giulianova</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Livorno</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Londra</a>
+                            <p>Soggiorni in ville</p>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Los Angeles</a>
+                            <p>Soggiorni in cottage</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Madonna di Campiglio</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marcelli</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marotta</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marsala</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+
+                            <a href="#">Mostra altro</a>
+
+
+
+
+
+
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Amsterdam</a>
-                    <p>Soggiorni in bungalow</p>
 
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Arezzo</a>
-                    <p>Soggiorni in case</p>
-
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Assisi</a>
-                    <p>Soggiorni in appartamenti</p>
-
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Barcellona</a>
-                    <p>Case vacanze</p>
-
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Bologna</a>
-                    <p>Soggiorni in case</p>
-
-                </div>
 
             </div>
-            <div class="row">
 
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Catania</a>
-                    <p>Case vacanze</p>
+            <div class="tab-content" id="myTab2">
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="1">
+                    <div class="row mt-4 ">
 
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Roma</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Genova</a>
+                            <p>Soggiorni in bungalow</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Turchia</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Egitto</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Francia</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Berlino</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Catania</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Chia</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Firenze</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Giulianova</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Livorno</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Londra</a>
+                            <p>Soggiorni in ville</p>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Los Angeles</a>
+                            <p>Soggiorni in cottage</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Madonna di Campiglio</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marcelli</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marotta</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marsala</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+
+                            <a href="#">Mostra altro</a>
+
+
+
+
+
+
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Chia</a>
-                    <p>Case vacanze</p>
 
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Firenze</a>
-                    <p>Soggiorni in case</p>
-
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Giulianova</a>
-                    <p>Case vacanze</p>
-
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Livorno</a>
-                    <p>Soggiorni in case</p>
-
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Londra</a>
-                    <p>Soggiorni in ville</p>
-
-                </div>
 
             </div>
-            <div class="row">
 
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Los Angeles</a>
-                    <p>Soggiorni in cottage</p>
+            <div class="tab-content" id="myTab3">
+                <div class="tab-pane fade" id="destination-tab-pane" role="tabpanel" aria-labelledby="destination-tab"
+                    tabindex="2">
 
+                    <div class="row">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Catania</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Chia</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Firenze</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Giulianova</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Livorno</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Londra</a>
+                            <p>Soggiorni in ville</p>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Los Angeles</a>
+                            <p>Soggiorni in cottage</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Madonna di Campiglio</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marcelli</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marotta</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marsala</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+
+                            <a href="#">Mostra altro</a>
+
+
+
+
+
+
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Madonna di Campiglio</a>
-                    <p>Soggiorni in case</p>
 
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Marcelli</a>
-                    <p>Case vacanze</p>
 
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Marotta</a>
-                    <p>Soggiorni in appartamenti</p>
-
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-                    <a href="#">Marsala</a>
-                    <p>Soggiorni in appartamenti</p>
-
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 ">
-
-                    <a href="#">Mostra altro</a>
-                </div>
             </div>
 
+            <div class="tab-content" id="myTab4">
+                <div class="tab-pane fade" id="island-tab-pane" role="tabpanel" aria-labelledby="island-tab"
+                    tabindex="3">
 
+                    <div class="row">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Los Angeles</a>
+                            <p>Soggiorni in cottage</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Madonna di Campiglio</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marcelli</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marotta</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marsala</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+
+                            <a href="#">Mostra altro</a>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="myTab5">
+                <div class="tab-pane fade" id="mountains-tab-pane" role="tabpanel" aria-labelledby="mountains-tab"
+                    tabindex="4">
+                    <div class="row mt-4 ">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">K2</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Everest</a>
+                            <p>Soggiorni in bungalow</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Mont Blanc</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Alpi</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marmolada</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Monte stelvio</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Catania</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Chia</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Firenze</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Giulianova</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Livorno</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Londra</a>
+                            <p>Soggiorni in ville</p>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Los Angeles</a>
+                            <p>Soggiorni in cottage</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Madonna di Campiglio</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marcelli</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marotta</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Marsala</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+
+                            <a href="#">Mostra altro</a>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="tab-content" id="myTab6">
+                <div class="tab-pane fade" id="categories-tab-pane" role="tabpanel" aria-labelledby="categories-tab"
+                    tabindex="5">
+                    <div class="row mt-4 ">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Roma</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Genova</a>
+                            <p>Soggiorni in bungalow</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Turchia</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Egitto</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Francia</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Berlino</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Catania</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Chia</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Firenze</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Giulianova</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Livorno</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Londra</a>
+                            <p>Soggiorni in ville</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-content" id="myTab7">
+                <div class="tab-pane fade" id="activities-tab-pane" role="tabpanel" aria-labelledby="activities-tab"
+                    tabindex="6">
+                    <div class="row mt-4 ">
+
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Italia</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Carmela</a>
+                            <p>Soggiorni in bungalow</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Salerno</a>
+                            <p>Soggiorni in case</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Egitto</a>
+                            <p>Soggiorni in appartamenti</p>
+
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 ">
+                            <a href="#">Francia</a>
+                            <p>Case vacanze</p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
         </div>
-
     </section>
     <script>
         let listItems = document.querySelectorAll("li")
@@ -237,9 +747,6 @@
         }
 
 
-
-
-
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -251,7 +758,7 @@
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 3
+                    slidesPerView: 5
                 },
                 768: {
                     slidesPerView: 6,
