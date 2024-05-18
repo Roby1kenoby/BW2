@@ -1,3 +1,6 @@
+body {
+    scroll-behavior: smooth;
+}
 #scrollable {
     padding-inline: 50px;
 }
@@ -14,11 +17,30 @@ main {
 .scrollable-img {
     margin: 12px 0px 10px;
     padding: 4px 0px;
+    cursor: pointer;
+    color: #6A6A6A;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+}
+
+.scrollable-img:hover {
+    color: black;
+    border-bottom: 2px solid #6A6A6A;
+    transition-duration: 0.5s;
 }
 
 #cardSection {
     min-height: 100vh;
     margin-bottom: 80px;
+}
+
+.anunncio {
+    text-decoration: none;
+    color: inherit;
+}
+
+.annuncio:hover {
+    transition: all 0.5s;
 }
 
 span {
@@ -51,18 +73,18 @@ span {
     visibility: hidden;
 }
 
-#carouselCard1:hover button,
-#carouselCard2:hover button,
-#carouselCard3:hover button,
-#carouselCard4:hover button,
-#carouselCard5:hover button,
-#carouselCard6:hover button,
-#carouselCard7:hover button,
-#carouselCard8:hover button,
-#carouselCard9:hover button,
-#carouselCard10:hover button,
-#carouselCard11:hover button,
-#carouselCard12:hover button {
+.anunncio:hover #carouselCard1 button,
+.anunncio:hover #carouselCard2 button,
+.anunncio:hover #carouselCard3 button,
+.anunncio:hover #carouselCard4 button,
+.anunncio:hover #carouselCard5 button,
+.anunncio:hover #carouselCard6 button,
+.anunncio:hover #carouselCard7 button,
+.anunncio:hover #carouselCard8 button,
+.anunncio:hover #carouselCard9 button,
+.anunncio:hover #carouselCard10 button,
+.anunncio:hover #carouselCard11 button,
+.anunncio:hover #carouselCard12 button {
     visibility: visible;
     transition-duration: 0.5s;
 }
@@ -104,8 +126,8 @@ span {
     align-items: center;
     background-color: white;
     color: black;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 
