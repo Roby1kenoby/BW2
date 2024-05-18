@@ -215,3 +215,8 @@ p {
 .footer {
     background-color: #F7F7F7;
 }
+
+.footer li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
