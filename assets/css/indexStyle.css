@@ -89,8 +89,8 @@ nav .dropdown-menu{
     /* transition searchBar to sticky */
     .smallSearchBar{
         position: absolute;
-        transform: translate(20%, -150%);
-        scale: 80%
+        transform: translate(0%, -170%);
+        scale: 70%
     }
 }
 #searchNavWrapper{
