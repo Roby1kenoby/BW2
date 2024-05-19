@@ -19,13 +19,14 @@
     <header class="container ">
         <nav id="socialNav" class="navbar navbar-expand-sm">
             <div class="container-fluid">
-                <div class="d-flex justify-content-between flex-wrap ">
+                <div class="d-flex justify-content-between flex-lg-wrap flex-md-nowrap  ">
                     <div class="col-md-6 col-lg-3 order-md-1 order-lg-1">
                         <a href="#" class="navbar-brand">
                             <img src="assets/logo-pink.png" alt="AirBnBLogo" class="img-fluid w-25">
                         </a>
                     </div>
-                    <div class="col-md-12 col-lg-6 d-flex align-items-center px-5 order-md-3 order-lg-2">
+                    <div id="mainLinkMenu"
+                        class="col-md-12 col-lg-6 d-none d-lg-flex align-items-center px-5 order-md-3 order-lg-2">
                         <div class="navbar-nav d-flex justify-content-center w-100">
                             <a href="#" class="nav-link px-3 active">Soggiorni</a>
                             <a href="#" class="nav-link px-3">Esperienze</a>
@@ -34,7 +35,7 @@
                     </div>
                     <div class="col-md-6 col-lg-3 d-flex align-items-center order-md-2 order-lg-3">
                         <div class="container d-flex align-items-center justify-content-end">
-                            <div class="d-flex justify-content-end me-3">
+                            <div class="d-flex justify-content-end me-3 d-none d-lg-flex ">
                                 <a href="#" class="nav-link p-2 text-nowrap ">Affitta con Airbnb</a>
                                 <a href="#" class="nav-link p-2 d-flex align-items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -79,8 +80,8 @@
             </div>
         </nav>
 
-        <nav>
-            <div id="searchNavWrapper" class="row d-flex">
+        <nav id="searchBar">
+            <div id="searchNavWrapper" class="row">
                 <div id="dove" class="searchField searchFieldBig col-4">
                     <div class="dropdown">
                         <a role="button" class="" data-bs-toggle="dropdown" data-bs-offset="-50,30">
@@ -132,7 +133,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="dropdown-center col-4 d-flex px-0">
+                <div class="dropdown-center col-4 d-none d-md-flex px-0">
                     <div role="button" class="searchField searchFieldSmall col-6">
                         <div>
                             <a role="button">
@@ -150,22 +151,68 @@
                         </div>
                     </div>
                     <ul id="datePicker" class="dropdown-menu">
-
                     </ul>
                 </div>
-                <div class="searchField searchFieldBig col-4">
-                    <div class="d-flex justify-content-between align-content-center ">
-                        <div class="">
-                            <p role="button" class="m-0 ">Chi</p>
-                            <p role="button" class="m-0 ">Aggiungi Ospiti</p>
-                        </div>
-                        <div id="lens" class="align-content-center rounded-circle bg-danger p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
-                                role="presentation" focusable="false"
-                                style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
-                                <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
-                            </svg>
-                        </div>
+                <div class="searchField searchFieldBig col-4 d-none d-md-block ">
+                    <div class="dropdown dropdown-menu-end">
+                        <a class="d-flex justify-content-between align-content-center " role="button"
+                            data-bs-toggle="dropdown" data-bs-offset="20,30">
+                            <div class="">
+                                <p role="button" class="m-0 ">Chi</p>
+                                <p role="button" class="m-0 ">Aggiungi Ospiti</p>
+                            </div>
+                            <div id="lens" class="align-content-center rounded-circle bg-danger p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                                    role="presentation" focusable="false"
+                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                    <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="m-0">
+                            <div class="dropdown-menu p-3">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Adults</span>
+                                    <div>
+                                        <button class="btn btn-outline-secondary btn-sm" onclick="decrement('adults')">
+                                            - </button>
+                                        <span id="adults" class="guest-count"> 1 </span>
+                                        <button class="btn btn-outline-secondary btn-sm" onclick="increment('adults')">
+                                            + </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Children</span>
+                                    <div>
+                                        <button class="btn btn-outline-secondary btn-sm"
+                                            onclick="decrement('children')"> - </button>
+                                        <span id="children" class="guest-count"> 0 </span>
+                                        <button class="btn btn-outline-secondary btn-sm"
+                                            onclick="increment('children')"> + </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Infants</span>
+                                    <div>
+                                        <button class="btn btn-outline-secondary btn-sm" onclick="decrement('infants')">
+                                            - </button>
+                                        <span id="infants" class="guest-count"> 0 </span>
+                                        <button class="btn btn-outline-secondary btn-sm" onclick="increment('infants')">
+                                            + </button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span>Pets</span>
+                                    <div>
+                                        <button class="btn btn-outline-secondary btn-sm" onclick="decrement('pets')"> -
+                                        </button>
+                                        <span id="pets" class="guest-count"> 0 </span>
+                                        <button class="btn btn-outline-secondary btn-sm" onclick="increment('pets')"> +
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
                     </div>
                 </div>
             </div>
