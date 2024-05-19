@@ -2491,7 +2491,7 @@
                                 <div class="swiper">
                                     <div class="swiper-wrapper ">
                                         <div class="swiper-slide nav-item" role="presentation">
-                                            <li class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            <li class="nav-link active  " id="home-tab" data-bs-toggle="tab"
                                                 data-bs-target="#home-tab-pane" type="button" role="tab"
                                                 aria-controls="home-tab-pane" aria-selected="true">Popolari</li>
                                         </div>
@@ -3211,6 +3211,11 @@
                 item.classList.remove('selected')
             });
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            if (listItems.length > 0) {
+                listItems[0].classList.add('black', 'selected');
+            }
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
