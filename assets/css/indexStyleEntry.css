@@ -70,7 +70,25 @@ nav .dropdown-menu{
     
 }
 
-@media screen and (min-width:1025px){
+@media screen and (min-width:1025px) and (max-width:1399px){
+    #searchNavWrapper{
+        width: 688px;
+        height: auto;
+    }
+    #datePicker.dropdown-menu{
+        width: 688px;
+    }
+
+    /* transition searchBar to sticky */
+    .smallSearchBar{
+        position: absolute;
+        transform: translate(20%, -140%);
+        scale: 70%
+    }
+    
+}
+
+@media screen and (min-width:1400px){
     #searchNavWrapper{
         width: 850px;
         height: auto;
