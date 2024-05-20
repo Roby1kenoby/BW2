@@ -33,11 +33,11 @@ document.querySelectorAll(".btn-outline-secondary").forEach((button) => {
 });
 
 document.addEventListener("click", function (event) {
-  var isClickInside =
+  let isClickInside =
     document.querySelector(".dropdown-menu").contains(event.target) ||
     document.querySelector(".dropdown-toggle").contains(event.target);
   if (!isClickInside) {
-    var dropdown = bootstrap.Dropdown.getInstance(
+    let dropdown = bootstrap.Dropdown.getInstance(
       document.getElementById("guestDropdown")
     );
     if (dropdown && dropdown._isShown()) {
